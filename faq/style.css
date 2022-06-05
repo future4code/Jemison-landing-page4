@@ -24,10 +24,12 @@ section details summary{
     border-bottom: 5px solid #282828;
     color: white;
     font-weight: 700;
+    font-size: 20px;
 }
 
 section details p{
     background-color:#fcead5;
     color: black;
     padding: 5%;
+    font-size: 20px;
 }
