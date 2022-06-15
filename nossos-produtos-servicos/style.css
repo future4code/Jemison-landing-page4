@@ -12,20 +12,22 @@ h2{
     font-family: 'Roboto', sans-serif;
 }
 .cartao{
-    display: flex;
-    
-    height: min-content;
-    width: 600px;
-    padding: 60px;
+
+    /*height: min-content;*/
     justify-content: space-evenly;
-    font-size: 25px;
-    
+}
+.cartao p{
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    padding: 60px;
+   display: flex;
+    font-size: 30px;
 }
 /*Imagem cartão*/
 .img{ 
     position: relative;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 5px;
     width: 300px;
     /*box-shadow: 10px 0 30px rgb(17, 17, 17);*/
     filter: drop-shadow(10px 0 30px rgb(5, 5, 5));
@@ -36,7 +38,7 @@ h3{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    
+   
 }
 div{
     display: flex;
@@ -52,7 +54,7 @@ span > img{
     height: auto;
 }
 span{
-    width: 160px;
+    width: 250px;
     height: auto;
     text-align: center;
 }
