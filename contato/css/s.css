@@ -1,0 +1,102 @@
+/* Códigos para a fonte Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,700&display=swap');
+
+/* Seção Contato: Os códigos Mobile First começam aqui */
+
+body {
+    background-color: #fc944c;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-contato {
+    background-image: url(/img/background-mobile.jpg);
+    background-size: cover;
+}
+
+.titulo-contato h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 10vh 0;
+    color: #fcead5;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 7vw;
+}
+
+.formulario input {
+    height: 5vh;
+    margin: 1.2vh 0;
+    padding: 5px 15px;
+    border: 1px solid #fcead5;
+    background-color: #fcead5;
+}
+
+.formulario label {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 1.2vh 2vw;
+    justify-items: center;
+    align-items: center;
+    color: #fcead5;
+    font-weight: 900;
+}
+
+.botao {
+    font-size: 1.1rem;
+    background-color: #fcead5;
+    color: darkslategrey;
+}
+
+.botao:active {
+    background-color: #fcb78c;
+    color: #fcead5;
+}
+
+/* Seção Contato: Os códigos Mobile First terminam aqui */
+
+/* Seção Contato: As medias queries começam aqui */
+
+@media screen and (min-width: 1200px) {
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .titulo-contato {
+        background-image: url(/img/background_desktop.jpg);
+        background-size: cover;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .titulo-contato h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        margin: 45vh 0;
+        color: #fc944c;
+        background-color: #fcead5;
+        padding: 1vh 0;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin: 20vh 17vw 5vh 7vw;
+    }
+    
+}
