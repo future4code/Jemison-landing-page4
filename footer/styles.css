@@ -1,0 +1,33 @@
+body{
+    background-color: #fc944c;
+}
+
+.alinhamento{
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+span{
+    width: 250px;
+    height: auto;
+    text-align:left;
+}
+
+#titulo{
+    font-size: large;
+}
+
+img{
+    width: 40px;
+    height: auto;
+}
+
+button{
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
