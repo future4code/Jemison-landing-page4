@@ -1,78 +1,144 @@
+/* Código para a Fonte Roboto */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
+/* Seção Nossos Produtos: o código Desktop First começa aqui */
 
 body{
-    margin: 0px;
+    margin: 0;
     padding: 0;
+    font-size: 10px;
 }
-h2{
-    margin: 20px;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-}
-.cartao{
 
-    /*height: min-content;*/
-    justify-content: space-evenly;
+.nossos-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
 }
-.cartao p{
+
+.titulo-principal {
+    margin: 20px;
+    font-size: 4em;
     font-family: 'Roboto', sans-serif;
-    width: 500px;
-    padding: 60px;
-   display: flex;
-    font-size: 30px;
 }
-/*Imagem cartão*/
-.img{ 
+
+.cartao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+.cartao p {
+    font-family: 'Roboto', sans-serif;
+    padding: 60px;
+    font-size: 3em;
+}
+
+.cartao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao a img {
     position: relative;
     display: inline-block;
     margin-top: 5px;
     width: 300px;
-    /*box-shadow: 10px 0 30px rgb(17, 17, 17);*/
     filter: drop-shadow(10px 0 30px rgb(5, 5, 5));
     transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
 }
-h3{
+
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     background-color: #fcead5;
-    margin: 0;
+}
+
+.subtitulo {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-   
-}
-div{
-    display: flex;
-    align-items: center;
-}
-main{
-    display: flex;
-    background-color: #fcead5;
+    margin: 20px 0 0 20px;
+    width: 50vw;
 }
 
-span > img{
-    width: 30px;
-    height: auto;
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60vw;
+    margin: 10vh 20vw 0 20vw;
+    row-gap: 10vh;
 }
-span{
-    width: 250px;
-    height: auto;
+
+.wrapper span {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+}
+
+.wrapper span p {
     text-align: center;
 }
-#titulo{
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-p{
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-}
-.vantagens{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 180px;
-  
+
+.wrapper span img {
+    width: 12%;
 }
 
+/* Seção Nossos Produtos: As media queries começam aqui */
+
+@media screen and (max-width: 480px) {
+    .nossos-produtos {
+        align-items: center;
+    }
+
+    .titulo-principal {
+        font-size: 2.8em;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 3vh 0vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cartao p {
+        padding: 0px;
+        margin: 5vh 5vw;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .subtitulo {
+        width: 90vw;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper span {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .cartao p {
+        width: 500px;
+    }
+    
+}
