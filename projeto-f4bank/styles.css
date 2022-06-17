@@ -1,0 +1,401 @@
+/*Início da Seção de Nossos Produtos*/
+body{
+    margin: 0px;
+    padding: 0;
+}
+h2{
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.cartao{
+
+    /*height: min-content;*/
+    justify-content: space-evenly;
+}
+.cartao p{
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    padding: 60px;
+   display: flex;
+    font-size: 30px;
+}
+/*Imagem cartão*/
+.img{ 
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    width: 300px;
+    /*box-shadow: 10px 0 30px rgb(17, 17, 17);*/
+    filter: drop-shadow(10px 0 30px rgb(5, 5, 5));
+    transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+}
+h3{
+    background-color: #fcead5;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+   
+}
+div{
+    display: flex;
+    align-items: center;
+}
+main{
+    display: flex;
+    background-color: #fcead5;
+}
+
+span > img{
+    width: 250px;
+    height: auto;
+}
+span{
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+#titulo{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.vantagens{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 180px;
+  
+}
+/*Fim da Seção de Nossos Produtos*/
+
+/*Início da Seção de Nosso Time*/
+
+/* Código para a inclusão da fonte Montserrat*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,700&display=swap');
+
+
+/* Seção: Nosso Time - O código Mobile First começa aqui */
+body {
+    background-color: #fc944c;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo img {
+    width: 5vw;
+}
+
+.titulo h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 5vh 0 0 0;
+    color: #fcead5;
+    font-weight: 900;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixa {
+    width: 80vw;
+    margin: 5vh 8vw 2vh 8vw;
+    padding: 2vh 2vw 0 2vw;
+    font-size: 1rem;
+    border: 1px solid #fcead5;
+    font-weight: 300;
+}
+
+.caixa img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #fcead5;
+}
+
+.caixa p {
+    text-align: center;
+    margin: 2vh 0;
+    color: #fcead5;
+}
+
+/* Seção: Nosso Time - O código Mobile First termina aqui */
+
+/* Seção: Nosso Time - As media queries começam aqui */
+
+@media screen and (min-width: 481px) {
+    .titulo img {
+        width: 2vw;
+    }
+
+    .time {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .caixa {
+        width: 80vw;
+        margin: 5vh 4vw 2vh 4vw;
+        padding: 2vh 2vw 0 2vw;
+        font-size: 1.1rem;
+        border: 1px solid #fcead5;
+    }
+}
+
+/* Seção: Nosso Time - As media queries terminam aqui */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+/*Fim da Seção de Nosso Time*/
+
+/*Início da Seção de Perguntas Frequentes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 60%;
+    max-width: 800px;
+}
+
+section details summary{
+    background-color: #fc944c;
+    padding: 5%;
+    border-bottom: 5px solid #282828;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+section details p{
+    background-color:#fcead5;
+    color: black;
+    padding: 5%;
+    font-size: 20px;
+}
+/*Fim da Seção de Perguntas Frequentes*/
+
+/*Início da Seção de Contato*/
+
+/* Códigos para a fonte Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,700&display=swap');
+
+/* Seção Contato: Os códigos Mobile First começam aqui */
+
+body {
+    background-color: #fc944c;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-contato {
+    background-image: url(/img/background-mobile.jpg);
+    background-size: cover;
+}
+
+.titulo-contato h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 10vh 0;
+    color: #fcead5;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 7vw;
+}
+
+.formulario input {
+    height: 5vh;
+    margin: 1.2vh 0;
+    padding: 5px 15px;
+    border: 1px solid #fcead5;
+    background-color: #fcead5;
+}
+
+.formulario label {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 1.2vh 2vw;
+    justify-items: center;
+    align-items: center;
+    color: #fcead5;
+    font-weight: 900;
+}
+
+.botao {
+    font-size: 1.1rem;
+    background-color: #fcead5;
+    color: darkslategrey;
+}
+
+.botao:active {
+    background-color: #fcb78c;
+    color: #fcead5;
+}
+
+/* Seção Contato: Os códigos Mobile First terminam aqui */
+
+/* Seção Contato: As medias queries começam aqui */
+
+@media screen and (min-width: 1200px) {
+
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .titulo-contato {
+        background-image: url(/img/background_desktop.jpg);
+        background-size: cover;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .titulo-contato h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        margin: 45vh 0;
+        color: #fc944c;
+        background-color: #fcead5;
+        padding: 1vh 0;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin: 20vh 17vw 5vh 7vw;
+    }
+    
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Fim da Seção de Contato*/
