@@ -7,7 +7,7 @@ Uma Landing Page é a porta de entrada de sites institucionais. Ela deve apresen
 
 ## Demonstração (Surge)
 
-https://spiteful-cook.surge.sh/
+https://flawless-scent.surge.sh/
 
 ## Documentação de cores
 

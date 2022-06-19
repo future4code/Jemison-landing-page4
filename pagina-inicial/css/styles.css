@@ -1,5 +1,9 @@
+/* Código para a Fonte Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    width: 100vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* A Seção Header começa aqui */
@@ -49,7 +53,8 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
-    
+    font-size: 1.6rem;
+    padding: 1vh 1vw;
 }
 .quem-somos{
     display: flex;
@@ -65,7 +70,6 @@ header{
 .quem-somos p {
     font-size: 28px;
 }
-
 
 /* As media queries começam aqui */
 
@@ -92,7 +96,7 @@ header{
         text-align: center;
         font-size: 1.2rem;
         font-weight: 700;
-        padding: 0 5vw;
+        padding: 1vh 5vw;
     }
 
     .quem-somos p {
@@ -101,15 +105,11 @@ header{
     }
 }
 
-
 /* A Seção Main - Quem Somos termina aqui */
 
+
+
 /*Início da Seção de Nossos Produtos*/
-
-/* Código para a Fonte Roboto */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-
 /* Seção Nossos Produtos: o código Desktop First começa aqui */
 
 .nossos-produtos {
@@ -121,7 +121,7 @@ header{
 
 .titulo-principal {
     margin: 20px;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -135,7 +135,7 @@ header{
 .cartao p {
     font-family: 'Roboto', sans-serif;
     padding: 60px;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .cartao a {
@@ -159,6 +159,7 @@ header{
     flex-direction: column;
     align-content: flex-start;
     background-color: #fcead5;
+    padding: 0 0 10vh 0;
 }
 
 .subtitulo {
@@ -172,8 +173,10 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 60vw;
-    margin: 10vh 20vw 0 20vw;
+    margin: 10vh 19vw 0 19vw;
     row-gap: 10vh;
+    column-gap: 3vw;
+    align-items: baseline;
 }
 
 .wrapper span {
@@ -259,12 +262,13 @@ header{
 
 /* Seção FAQ/Perguntas frequentes: O código Desktop First começa aqui */
 
-section{
-    width: 60%;
+.faq {
+    width: 100%;
     max-width: 800px;
+    margin: 0 auto;
 }
 
-section details summary{
+.faq details summary{
     background-color: #fc944c;
     padding: 5%;
     border-bottom: 5px solid #282828;
@@ -273,7 +277,7 @@ section details summary{
     font-size: 20px;
 }
 
-section details p{
+;faq details p{
     background-color:#fcead5;
     color: black;
     padding: 5%;
@@ -285,22 +289,18 @@ section details p{
 /* Seção FAQ/Perguntas frequentes: As media queries começam aqui */
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color:#fcead5;
-    }
 
-    section{
+    .faq {
         width: 96%;
         margin: 10vh 2vw;
-        max-width: 800px;
     }
 
-    section details summary{
+    .faq details summary{
         font-size: 18px;
         border-radius: 4%;
     }
 
-    section details p{
+    .faq details p{
         font-size: 16px;
     }
     
@@ -310,11 +310,6 @@ section details p{
 
 /*Início da Seção de Nosso Time*/
 
-/* Código para a inclusão da fonte Montserrat*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,700&display=swap');
-
-
 /* Seção: Nosso Time - O código Mobile First começa aqui */
 
 .wrapper2 {
@@ -323,8 +318,8 @@ section details p{
     justify-content: center;
     background-color: #fc944c;
     font-family: 'Roboto', sans-serif;
-    width: 100vh;
     margin: 0;
+    padding: 10vh 0;
 }
 
 .titulo img {
@@ -382,7 +377,7 @@ section details p{
     }
 
     .caixa {
-        width: 80%;
+        width: 80vw;
         margin: 5vh 4vw 2vh 4vw;
         padding: 2vh 2vw 0 2vw;
         font-size: 1.1rem;
@@ -494,7 +489,6 @@ section details p{
 }
 
 /* Fim da seção Contato */
-
 
 /* CSS relacionado ao Footer da págna começa aqui */
 
